@@ -1,0 +1,40 @@
+.contenedor-principal{
+    text-align: center;
+}
+
+.contenedor-principal>button{
+    margin: 5% 40px 0px 40px;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.contenedor-secundario{
+    display: none;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 60%;
+    margin: 20px auto;
+}
+.option{
+    
+    display: block;
+    margin: 5px auto 20px auto;
+    width: 30%;    
+}
+.option>button{
+    font-size: 27px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+#taller1{
+    display: none;
+}
+#taller2{
+    display: none;
+}
