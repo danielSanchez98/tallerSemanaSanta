@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+  }
+.triqui {    
+    margin: auto ;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    font-size: 25px;
+    font-family: helvetica;
+    color: black;
+  }
+  
+  .triqui .fila {
+    height: 100px;
+  }
+  
+  .triqui .fila:not(:last-child) {
+    border-bottom: 1.5px solid black;
+  }
+  
+  .triqui .fila .celda {
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding-top: 34px;
+  }
+
+  .triqui .fila .celda:not(:last-child) { 
+    border-right: 1.5px solid black;
+  }
