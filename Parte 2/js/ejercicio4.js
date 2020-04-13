@@ -70,7 +70,8 @@ function iniciarJuego(){
     juego.start()
     showGame(juego.output());
 }
-function comprobarLetraUsuario(){
+function comprobarLetraUsuario(e){
+    e.preventDefault();
     //juego=new ahorcado();
     try {
         juego.comprobarLetraUsuario();
