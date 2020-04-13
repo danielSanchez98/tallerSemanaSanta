@@ -2,6 +2,27 @@
     padding: 0;
     margin: 0;
 }
+.nav{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    height: 50px;
+    
+}
+.nav button{
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    padding: 4px;
+    outline: none;
+}
+.nav button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    color: white;
+}
 .cajeros{
     display: grid;
     grid-template-columns: repeat(5,1fr);

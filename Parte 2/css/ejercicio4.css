@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+.nav{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    height: 50px;
+}
 .contenedor{
   position: absolute;
   left: 50%;
