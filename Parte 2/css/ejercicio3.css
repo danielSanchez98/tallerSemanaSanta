@@ -2,7 +2,11 @@
     box-sizing: border-box;
   }
 .triqui {    
-    margin: auto ;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
     height: 300px;
     width: 300px;
     background-color: white;
@@ -30,3 +34,30 @@
   .triqui .fila .celda:not(:last-child) { 
     border-right: 1.5px solid black;
   }
+
+  button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-59%, 50%);
+    display: block;
+    margin: 20px 10px;
+    font-size: 22px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+    padding: 4px;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    border: 1px solid whitesmoke;
+    color: white;
+
+}
+h2{
+  text-align: center;
+  margin-top: 100px;
+  font-size: 30px;
+}
