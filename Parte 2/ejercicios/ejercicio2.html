@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller 2 Ejercicio 2</title>
+    <link rel="stylesheet" href="../css/ejercicio2.css">
 </head>
 <body>
     <div class="contenedor">
         <form >
-            <label for="number"></label>
-            <input id="number" type="number" min="1" max="1000">
+            <input id="number" type="number" min="1" max="1000" placeholder="Ingrese su numero">
 
 
             <button id="enviar" type="submit">Consultar Numero</button>
         </form>
+        <label id="romanNumber">Tu numero es: <span id="num"></span> <br>
+         En romano es: <span id="rom"></span></label>
 
     </div>
 
-    <label id="romanNumber">Tu numero es: <span></span> en romano es: <span></span></label>
+    
 
     <script src="../js/ejercicio2.js"></script>
     

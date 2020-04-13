@@ -1,12 +1,15 @@
 const romanos= ['I',"V",'X',"L", "C","D", "M"];
+let numeroUser = document.getElementById('number');
+let salidaNumero=document.getElementById('num');
+let salidaRomano=document.getElementById('rom');
 
 document.querySelector('form').addEventListener('submit',function(e){
     e.preventDefault();
-    let numero = document.getElementById('number').value;
-    let longitud= numero.length;
+    let numeroU=numeroUser.value;
+    let longitud= numeroU.length;
     let unidad,decena,centena;
     let romano='';
-    numero=Number(numero);
+    let numero=Number(numeroU);
     
     centena = parseInt(numero/100);
     decena= parseInt((numero-(100*parseInt(numero/100)))/10);
@@ -51,7 +54,8 @@ document.querySelector('form').addEventListener('submit',function(e){
     }
 
     console.log('romano es', romano)
-    
+    salidaNumero.innerHTML=`<strong>${numeroU}</strong>`;
+    salidaRomano.innerHTML=`<strong>${romano}</strong>`;
 
 
     
@@ -165,6 +169,8 @@ function convertirARomano(numero, rango){
 
         }
 
+    }else{
+        romano=romanos[6];
     }
 
     return romano;
