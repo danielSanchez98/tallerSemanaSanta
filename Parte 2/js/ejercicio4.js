@@ -39,9 +39,28 @@ class ahorcado{
            
        }
        if (!this.palabra.includes(letraUsuario) && letraUsuario!==''){
-           this.maxIntentos -=1;
-           this.historialLetras.push(letraUsuario);
+           let repetido = false;
+           if(this.maxIntentos===5){
+                this.historialLetras.push(letraUsuario);
+                this.maxIntentos -=1;
 
+           }else{
+            for (let i = 0; i < this.historialLetras.length; i++) {
+                if(this.historialLetras[i]===letraUsuario){
+                    repetido=true;
+                }
+                
+            }
+            if(!repetido){
+                this.historialLetras.push(letraUsuario); 
+                this.maxIntentos -=1;
+                repetido=false;             
+
+            }
+
+           }
+           
+           
        }
        this.endGame();
    }
